@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+{% endblock %}
+
+{% block body %}
+<div class="formulario">
+	<h2>Datos Personales</h2>
+	<div>
+		<h4>Names: </h4>{{name}} <br>
+	</div>
+	<div>
+		<h4>Lastname: </h4>{{lastname}}<br>
+	</div>
+	<div>
+		<h4>Date: </h4> {{date}}<br>
+	</div>
+	<div>
+		<h4>email: </h4>{{email}} <br>
+	</div>
+	
+</div>
+{% endblock %}
+
+
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Desarrollo Basado en Platafroma</title>
+	</head>
+	<body>
+		<h1>{{name}} is in Session!</h1>
+	</body>
+</html>
+-->

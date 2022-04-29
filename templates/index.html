@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Welcome
+{% endblock %}
+
+{% block body %}
+
+	<div>
+	<section class="formulario">
+	<div>
+		<h1>REGISTRO</h1>
+	</div>
+	<form action = "{{url_for('login')}}" method="post">
+		<input class="datos" type="text"  name ="nombre" placeholder =" Names">
+
+		<input class="datos" type="text"  name ="apellido" placeholder ="Last names">
+
+		<input class="datos" type="date" name="fecha">
+
+		<input class="datos" type="email"  name= "correo" placeholder ="email">
+
+		<input class="datos" type="password"  name= "contraseña" placeholder ="password">
+
+		<input class="button" type="submit" name="enviar">
+	</form>
+	
+	</section>
+   </div>
+{% endblock %}
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Desarrollo Basado en Platafroma</title>
+	</head>
+	<body>
+		<h1>Welcome</h1>
+	</body>
+</html>
+ -->

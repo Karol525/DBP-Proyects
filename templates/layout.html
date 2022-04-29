@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--CEsto se repite en todos los html -->
+		<title>CS 2022 Desarrollo Basado en Platafroma</title>
+
+		<link rel = "stylesheet" href="{{ url_for('static', filename= 'styles.css')}}">
+
+	</head>
+	<body>
+		<h1>{% block heading %} {%endblock%}<!-- heading (Cambio 1) -->			
+		</h1>
+		{% block body %} {%endblock%}<!--body (Cambio 2) -->
+	</body>
+</html> 
